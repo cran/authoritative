@@ -26,13 +26,12 @@
 #'
 #' @export
 parse_authors <- function(author_string) {
-
   # Sanitize input from pkgsearch / crandb
-  author_string <- author_string |>
-    stringi::stri_replace_all_fixed(
-      "<U+000a>",
-      " "
-    )
+  author_string <- stringi::stri_replace_all_fixed(
+    author_string,
+    "<U+000a>",
+    " "
+  )
 
   authors_no_brackets <- author_string |>
     remove_brackets("(") |>
@@ -45,7 +44,10 @@ parse_authors <- function(author_string) {
     stringi::stri_replace_all_regex("\\b(Prof|Dr|Mr|Mrs|Ms)\\.?\\s*", "") |>
     # Separators
     stringi::stri_replace_all_regex("\\s+", " ") |>
-    stringi::stri_replace_all_regex("\\b(with contributions?|contributed datasets) (of|from|by)\\b:?", ", ") |>
+    stringi::stri_replace_all_regex(
+      "\\b(with contributions?|contributed datasets) (of|from|by)\\b:?",
+      ", "
+    ) |>
     stringi::stri_replace_all_regex("\\bR [pP]ort [bB]y\\s+", ", ") |>
     stringi::stri_replace_all_regex("\\band\\b", ", ") |>
     stringi::stri_split_regex("\\s*(,\\s*)+") |>

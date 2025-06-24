@@ -11,13 +11,20 @@ Utilities to parse authors fields from DESCRIPTION files and general purpose fun
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/epiverse-connect/authoritative}
-  \item Report bugs at \url{https://github.com/epiverse-connect/authoritative/issues}
+  \item \url{https://github.com/Bisaloo/authoritative}
+  \item \url{https://hugogruson.fr/authoritative/}
+  \item Report bugs at \url{https://github.com/Bisaloo/authoritative/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Hugo Gruson \email{hugo@data.org} (\href{https://orcid.org/0000-0002-4094-1476}{ORCID}) [copyright holder]
+\strong{Maintainer}: Hugo Gruson \email{hugo.gruson+R@normalesup.org} (\href{https://orcid.org/0000-0002-4094-1476}{ORCID}) [copyright holder]
+
+Other contributors:
+\itemize{
+  \item Chris Hartgerink (\href{https://orcid.org/0000-0003-1050-6809}{ORCID}) [reviewer]
+  \item data.org (until version 0.2.0 included) [funder]
+}
 
 }
 \keyword{internal}

@@ -1,5 +1,4 @@
 test_that("expand_names() transforms matching names", {
-  
   # Expanded without middle name
   expect_identical(
     expand_names(
@@ -8,7 +7,7 @@ test_that("expand_names() transforms matching names", {
     ),
     rep_len("Wolfgang Mozart", 2)
   )
-      
+
   # Expanded ith middle name
   expect_identical(
     expand_names(

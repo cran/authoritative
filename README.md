@@ -11,9 +11,9 @@
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
-[![R-CMD-check](https://github.com/epiverse-connect/authoritative/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/epiverse-connect/authoritative/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/Bisaloo/authoritative/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Bisaloo/authoritative/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/epiverse-connect/authoritative/branch/main/graph/badge.svg)](https://app.codecov.io/gh/epiverse-connect/authoritative?branch=main)
+coverage](https://codecov.io/gh/Bisaloo/authoritative/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Bisaloo/authoritative?branch=main)
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)](https://www.reconverse.org/lifecycle.html#concept)
 <!-- badges: end -->
 
@@ -32,7 +32,7 @@ or the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
-pak::pak("epiverse-connect/authoritative")
+pak::pak("Bisaloo/authoritative")
 ```
 
 ## Example
@@ -45,8 +45,8 @@ library(authoritative)
 pkg_description <- system.file("DESCRIPTION", package = "authoritative")
 authors_r_pkg <- read.dcf(pkg_description, "Authors@R")
 parse_authors_r(authors_r_pkg)
-#> [[1]]
-#> [1] "Hugo Gruson <hugo@data.org> [aut, cre, cph] (<https://orcid.org/0000-0002-4094-1476>)"
+#> [1] "Hugo Gruson <hugo.gruson+R@normalesup.org> [aut, cre, cph] (ORCID: <https://orcid.org/0000-0002-4094-1476>)"
+#> [2] "Chris Hartgerink [rev] (ORCID: <https://orcid.org/0000-0003-1050-6809>)"
 ```
 
 ## Development
@@ -61,7 +61,7 @@ package is not ready for use outside of the development team.
 ### Contributions
 
 Contributions are welcome via [pull
-requests](https://github.com/epiverse-connect/authoritative/pulls).
+requests](https://github.com/Bisaloo/authoritative/pulls).
 
 ### Related projects
 

@@ -36,7 +36,6 @@
 #' length(unique(epi_pkg_authors_normalized))
 #'
 expand_names <- function(short, expanded) {
-
   # Sort by string length to ensure match() gives priority to expanded names
   expanded <- expanded[order(nchar(expanded), decreasing = TRUE)]
 
@@ -81,7 +80,7 @@ expand_names <- function(short, expanded) {
     if (all(is.na(x))) {
       return(NA)
     }
-    min(x, na.rm = TRUE)
+    return(min(x, na.rm = TRUE))
   })
 
   short[!is.na(longest_match)] <- expanded[longest_match[!is.na(longest_match)]]
